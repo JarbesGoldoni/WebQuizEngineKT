@@ -1,0 +1,123 @@
+<h2>Interface inheritance</h2>
+<div class="step-text">
+<p>Inheritance is a concept we have already covered in the context of classes. It greatly helps with reducing the amount of boilerplate code by introducing a way to create extensions of classes, or even class models or abstractions, to be implemented later.</p>
+<p>We use inheritance when we need a certain class to inherit the properties of another one and thus extend it, without having to unnecessarily copy its code. Basically, it works when the class we want to create has something in common with the classes we've already made.</p>
+<h5 id="interface-inheritance">Interface inheritance</h5>
+<p>The same pattern applies to interfaces, but they take it even further. Classes in Kotlin cannot extend more than one base class, but they can implement several interfaces (classes may extend the base class, which extends another class, but that's not quite the same as the general idea of multiple inheritance).</p>
+<p>Syntax for class and interface inheritance is the same: the name of the new interface goes before a colon (<code class="language-kotlin">:</code>) and after the <code class="language-kotlin">interface</code> keyword; after the colon goes the name of the base interface – the one whose properties the new interface inherits:</p>
+<pre><code class="language-kotlin">interface Animal {
+    val amountOfLimbs: Int
+    fun move()
+    fun communicate()
+}
+
+interface Bird : Animal {
+    val canFly: Boolean
+    val flyingSpeed: Int
+    fun buildNest()
+}</code></pre>
+<p>In this example, since birds possess some properties and characteristics of animals, the <code class="language-kotlin">Bird</code> interface is derived from the <code class="language-kotlin">Animal</code> interface, while adding some methods and properties of its own.</p>
+<h5 id="implementation-of-derived-interface">Implementation of derived interface</h5>
+<p>The main rule of implementing derived interfaces is that the class must implement methods and properties from both the base and the derived interface:</p>
+<pre><code class="language-kotlin">interface Animal {
+    val numberOfLimbs: Int
+    fun move()
+    fun communicate()
+}
+
+class Parrot : Bird // : Animal
+{
+    // These properties are inherited from the Animal interface...
+    override val numberOfLimbs: Int = 2
+
+    override fun move() {
+        fly()
+    }
+
+    override fun communicate() {
+        speak()
+    }
+
+    // ...while these ones are specifically from the Bird interface
+
+    override val canFly: Boolean = true
+
+    override val flyingSpeed: Int = 20
+
+    override fun buildNest() {
+        collectMaterials()
+        findGoodPlace()
+        buildSmallNest()
+    }
+}</code></pre>
+<p>In this example, <code class="language-kotlin">Parrot</code> is a bird, which is an animal, so <code class="language-kotlin">Parrot</code> has characteristics of both <code class="language-kotlin">Bird</code> and <code class="language-kotlin">Animal</code>.</p>
+<h5 id="multiple-inheritance">Multiple Inheritance </h5>
+<p>However, this is not the only way to implement some instance of a bird having characteristics of more than one interface. We can also utilize <strong>multiple inheritance</strong>: a class which implements several different interfaces.</p>
+<p>Here, we separate the <code class="language-kotlin">Flying</code> characteristic of a bird into another interface. A good reason for that in a real simulation might be the fact that birds are not the only creatures who can fly, so we can make the <code class="language-kotlin">Insect</code> class (or interface) implement the <code class="language-kotlin">Flying</code> interface as well.</p>
+<pre><code class="language-kotlin">interface Bird : Animal {
+    fun buildNest()
+}
+
+interface Flying {
+    val flyingSpeed: Int
+    val flyingManeuverability: Int
+}
+
+class Owl : Bird, Flying {
+
+    // Flying interface
+    override val flyingSpeed: Int = 100
+    override val flyingManeuverability: Int = 95
+
+    // Bird interface
+    override fun buildNest() {
+        buildSmallNest()
+    }
+
+    // Animal Interface
+    override val numberOfLimbs: Int = 2
+
+    override fun move() {
+        fly()
+    }
+
+    override fun communicate() {
+        coo()
+    }
+
+}
+
+// Reusing the Flying interface
+interface Insect : Flying
+{
+    // ...
+}
+
+class Fly : Insect, Animal {
+	// ...
+}</code></pre>
+<p>Sometimes, however, when a class implements many interfaces, we might encounter a situation when it inherits multiple implementations of the same method or property. This leads to conflicts, and we'll talk about resolving those in the next topic.</p>
+<h5 id="inheritance-from-multiple-interfaces">Inheritance from multiple interfaces</h5>
+<p>Just like classes can implement several interfaces, one interface might be derived from several others. </p>
+<pre><code class="language-kotlin">interface FlyingBird : Bird, Flying  
+{  
+    /* ... */  
+}</code></pre>
+<p>Then our <code class="language-kotlin">Owl</code> class will look like that:</p>
+<pre><code class="language-kotlin">class Owl : FlyingBird {  
+  
+ // FlyingBird interface, derived from Flying
+ override val flyingSpeed: Int = 100  
+ override val flyingManeuverability: Int = 95  
+  
+ // FlyingBird interface, derived from Bird
+ override fun buildNest() {  
+        buildSmallNest()  
+    }
+	
+	/* ... */
+
+}</code></pre>
+<h5 id="conclusion"> Conclusion</h5>
+<p>Now you know that inheritance as a tool in your programmer's toolbox can be applied not only to classes, but to interfaces as well, allowing for much more complex structures or hierarchies. Not only can we inherit from an interface that, in turn, inherits from another interface, but we can also do things that wouldn't work when using just classes – like inheriting properties from multiple interfaces at once – and it's as easy as making a list separated by commas.</p>
+</div>

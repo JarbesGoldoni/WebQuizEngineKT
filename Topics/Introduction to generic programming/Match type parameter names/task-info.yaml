@@ -1,0 +1,35 @@
+type: matching
+captions:
+  - T
+  - S
+  - U
+  - V
+  - E
+  - "N"
+options:
+  - Value or fourth type
+  - Third type
+  - First type
+  - Number
+  - Element
+  - Second type
+files:
+  - name: src/Main.kt
+    visible: true
+    text: |
+      // You can experiment here, it won’t be checked
+      
+      fun main(args: Array<String>) {
+        // put your code here
+      }
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/19666#comment
+status: Solved
+record: -1
+ordering:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5

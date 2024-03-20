@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":Topics-Interface_inheritance-Interfacing_without_errors__find_what's_wrong" external.linked.project.path="$MODULE_DIR$/../../../../../Topics/Interface inheritance/Interfacing without errors  find what's wrong" external.root.project.path="$MODULE_DIR$/../../../../.." external.system.id="GRADLE" external.system.module.group="Web Quiz Engine (Kotlin)2" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../../Topics/Interface inheritance/Interfacing without errors  find what's wrong">
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../Topics/Interface inheritance/Interfacing without errors  find what's wrong/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../Topics/Interface inheritance/Interfacing without errors  find what's wrong/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../Topics/Interface inheritance/Interfacing without errors  find what's wrong/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

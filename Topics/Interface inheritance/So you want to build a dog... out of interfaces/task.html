@@ -1,0 +1,35 @@
+<h2>So you want to build a dog... out of interfaces</h2>
+<div class="step-text">
+<p></p>
+<p>Suppose you're provided with the following interfaces...</p>
+<pre><code class="language-kotlin">interface Animal {}
+
+interface Fish : Animal {}
+
+interface Bird : Animal {}
+
+// Has the capacity to bite
+interface Biting {}
+
+// Has the capacity to purr. As cats do.
+interface Purring {}
+
+// Has the capacity to bark!
+interface Barking {}
+
+// Has the capacity to move
+interface Moving {}
+
+// Has the capacity to walk
+interface Walking : Moving {}
+
+// Has the capacity to fly
+interface Flying : Moving {}
+
+// Can walk upright, using 2 limbs
+interface Bipedal : Moving {}
+
+// Has the capacity of intelligible speech
+interface Talking {}</code></pre>
+<p>Which of them would you implement when programming a <code class="language-kotlin">Dog</code> class? </p>
+</div>

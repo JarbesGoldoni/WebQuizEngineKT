@@ -1,0 +1,23 @@
+type: code
+files:
+  - name: src/Main.kt
+    visible: true
+    highlight_level: NONE
+    text: |-
+      // define the class
+      class SweetBox {
+      
+      }
+      
+      // don't change classes below
+      class Chocolate
+      
+      class Marmelade
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/14701#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Thu, 29 Feb 2024 02:23:39 UTC"
+record: -1
+submission_language: kotlin

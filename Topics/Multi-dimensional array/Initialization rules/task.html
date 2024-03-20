@@ -1,0 +1,34 @@
+<h2>Initialization rules</h2>
+<div class="step-text">
+<p></p>
+<p>Select all correct initializations of a multidimensional array:</p>
+<p><b>Tip:</b> Don't forget that in a single multidimensional array may be arrays of different types and lengths. Meanwhile, if you have initialized a one-dimensional array of a certain type, you cannot fill it with elements of other type. </p>
+<p>a)</p>
+<pre><code class="language-kotlin">val arrayMD = arrayOf(
+    arrayOf(),
+    arrayOf()
+)</code></pre>
+<p>b)</p>
+<pre><code class="language-kotlin">val arrayMD = arrayOf(
+    arrayOf(booleanArrayOf(true, true), arrayOf(1, 1)),
+    arrayOf(arrayOf(1, 1), booleanArrayOf(true, true))
+)</code></pre>
+<p>c)</p>
+<pre><code class="language-kotlin">val arrayMD = arrayOf(
+    arrayOf&lt;String&gt;(1, 2, 0),
+    arrayOf&lt;String&gt;(0, 2, 5),
+    arrayOf&lt;String&gt;(5, 1, 0)
+)
+</code></pre>
+<p>d)</p>
+<pre><code class="language-kotlin">val n = arrayOf(
+    FloatArray(0),
+    FloatArray(1),
+    DoubleArray(2)
+)</code></pre>
+<p>e)</p>
+<pre><code class="language-kotlin">val arrayMD = arrayOf(
+    arrayOf('q', 'w', 'e'),
+    arrayOf('r', 't', 'y')
+)</code></pre>
+</div>

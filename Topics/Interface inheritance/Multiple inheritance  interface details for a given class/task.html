@@ -1,0 +1,35 @@
+<h2>Multiple inheritance: interface details for a given class</h2>
+<div class="step-text">
+<p></p>
+<p>Suppose you're programming a structure which would benefit from generalization. Having an interface which allows you to index your entities allows you to create all sorts of things – lists, queues, and hashes. What if you would like to have a matrix? (It's a mathematical version of a 2-dimensional array, nothing complicated. Or a mathematical representation of a data table.)</p>
+<p>Of course, you could index each element with a single number, but it would be more convenient to refer to the elements of a matrix (or array) via rows and columns rather than a single index. </p>
+<pre><code class="language-kotlin">interface Listed {
+    val index: String  
+}
+
+interface Tabulated : Listed {
+    // Your code here
+}
+
+data class Element(
+    override val column: Int,  
+    override val row: Int,
+    var value: Int
+) : Tabulated</code></pre>
+<p>Using what you know about interfaces, make sure that the <code class="language-kotlin">Element</code>'s of the matrix are still indexed, but in an appropriate way.</p>
+<p>Your task is to complete the <code class="language-kotlin">Tabulated</code> interface so that the <code class="language-kotlin">Element</code> class is implemented correctly and the <code class="language-kotlin">number</code> property of an <code class="language-kotlin">Element</code> provides correct information regarding the element's row and column:  </p>
+<pre><code class="language-kotlin">// code
+val cell1 = Element(1, 2, 10)
+val cell2 = Element(2, 4, 15)
+val cell3 = Element(4, 5, 92372)
+
+println(cell1.index)
+println(cell2.index)
+println(cell3.index)</code></pre>
+<pre><code class="language-kotlin">// output of the code above
+
+1, 2
+2, 4
+4, 5
+</code></pre><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 8 seconds</font><br><br>
+</div>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="distributionType" value="WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Topics/Debugging techniques/Find the error" />
+            <option value="$PROJECT_DIR$/Topics/Debugging techniques/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Generics and Any/Correct the usage of a non-generic class" />
+            <option value="$PROJECT_DIR$/Topics/Generics and Any/Initialize an object of a generic class" />
+            <option value="$PROJECT_DIR$/Topics/Generics and Any/Make it generic" />
+            <option value="$PROJECT_DIR$/Topics/Generics and Any/Signature of generic class" />
+            <option value="$PROJECT_DIR$/Topics/Generics and Any/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Generics and Any/What is wrong" />
+            <option value="$PROJECT_DIR$/Topics/Generics and Any/Write a generic function" />
+            <option value="$PROJECT_DIR$/Topics/Interface inheritance/Implementing a class which inherits properties of several interfaces" />
+            <option value="$PROJECT_DIR$/Topics/Interface inheritance/Implementing without errors  find what's wrong" />
+            <option value="$PROJECT_DIR$/Topics/Interface inheritance/Interfacing without errors  find what's wrong" />
+            <option value="$PROJECT_DIR$/Topics/Interface inheritance/Multiple inheritance  interface details for a given class" />
+            <option value="$PROJECT_DIR$/Topics/Interface inheritance/Seeking the truth" />
+            <option value="$PROJECT_DIR$/Topics/Interface inheritance/So you want to build a dog... out of interfaces" />
+            <option value="$PROJECT_DIR$/Topics/Interface inheritance/Some definitions" />
+            <option value="$PROJECT_DIR$/Topics/Interface inheritance/Syntax time" />
+            <option value="$PROJECT_DIR$/Topics/Interface inheritance/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Introduction to generic programming/Learning on mistakes" />
+            <option value="$PROJECT_DIR$/Topics/Introduction to generic programming/Match type parameter names" />
+            <option value="$PROJECT_DIR$/Topics/Introduction to generic programming/Random generic class" />
+            <option value="$PROJECT_DIR$/Topics/Introduction to generic programming/Sweety coding" />
+            <option value="$PROJECT_DIR$/Topics/Introduction to generic programming/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Multi-dimensional array/Accordance" />
+            <option value="$PROJECT_DIR$/Topics/Multi-dimensional array/Corners" />
+            <option value="$PROJECT_DIR$/Topics/Multi-dimensional array/Correct statements" />
+            <option value="$PROJECT_DIR$/Topics/Multi-dimensional array/Indexing rules" />
+            <option value="$PROJECT_DIR$/Topics/Multi-dimensional array/Initialization rules" />
+            <option value="$PROJECT_DIR$/Topics/Multi-dimensional array/Kotlin arrays" />
+            <option value="$PROJECT_DIR$/Topics/Multi-dimensional array/Practical applications" />
+            <option value="$PROJECT_DIR$/Topics/Multi-dimensional array/Print ZERO" />
+            <option value="$PROJECT_DIR$/Topics/Multi-dimensional array/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Set/Combinination" />
+            <option value="$PROJECT_DIR$/Topics/Set/Comprehension" />
+            <option value="$PROJECT_DIR$/Topics/Set/Comprehension (1)" />
+            <option value="$PROJECT_DIR$/Topics/Set/Conversion" />
+            <option value="$PROJECT_DIR$/Topics/Set/Element problem" />
+            <option value="$PROJECT_DIR$/Topics/Set/First things first" />
+            <option value="$PROJECT_DIR$/Topics/Set/Happy birthday" />
+            <option value="$PROJECT_DIR$/Topics/Set/Subtraction" />
+            <option value="$PROJECT_DIR$/Topics/Set/The truth is" />
+            <option value="$PROJECT_DIR$/Topics/Set/Theory" />
+            <option value="$PROJECT_DIR$/Web Quiz Engine (Kotlin)/task" />
+            <option value="$PROJECT_DIR$/Web Quiz Engine (Kotlin)/task/build/classes/java" />
+            <option value="$PROJECT_DIR$/Web Quiz Engine (Kotlin)/task/build/generated/sources/annotationProcessor/java" />
+            <option value="$PROJECT_DIR$/Web Quiz Engine (Kotlin)/task/build/generated/sources/headers/java" />
+            <option value="$PROJECT_DIR$/Web Quiz Engine (Kotlin)/task/build/reports/tests" />
+            <option value="$PROJECT_DIR$/Web Quiz Engine (Kotlin)/task/build/test-results" />
+            <option value="$PROJECT_DIR$/Web Quiz Engine (Kotlin)/task/build/tmp" />
+            <option value="$PROJECT_DIR$/util" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,26 @@
+<h2>Syntax time!</h2>
+<div class="step-text">
+<p></p>
+<p>How do we show in code that an interface inherits from another interface?</p>
+<pre><code class="language-kotlin">interface MyInterface {}
+
+//====== [1] ======
+interface MyDerivedInterface from MyInterface {
+    /* ... */
+}
+
+//====== [2] ======
+interface MyDerivedInterface : MyInterface {
+    /* ... */
+}
+
+//====== [3] ======
+interface MyDerivedInterface::MyInterface {
+    /* ... */
+}
+
+//====== [4] ======
+interface MyDerivedInterface -&gt; MyInterface {
+    /* ... */
+}</code></pre>
+</div>
